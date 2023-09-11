@@ -21,90 +21,42 @@ body {
 }
 
 .container {
-    width: 60%;
-    margin: 2rem auto;
+  width: 100%;
+  max-width: 1200px; /* or whatever the max width you desire */
+  margin: 0 auto;
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+  grid-gap: 20px; /* space between images */
+}
+
+/* You can modify these classes if you need some specific styles for specific items. */
+.gallery__item {
+  /* Ensuring that the image occupies full space of its container */
+  width: 100%;
+  padding-top: 100%; /* for a square aspect ratio */
+  position: relative; /* set position context for inner img */
 }
 
 .gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  position: absolute; /* absolute position to fit inside the .gallery__item */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures the image covers the whole area without distortion */
 }
 
-.gallery__item--1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-
-    /** Alternative Syntax **/
-    /* grid-column: 1 / span 2;  */
-    /* grid-row: 1 / span 2; */
+/* Modal styles */
+.modal {
+  /* ... your existing modal styles ... */
 }
 
-.gallery__item--2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-
-    /** Alternative Syntax **/
-    /* grid-column: 3 / span 2;  */
-    /* grid-row: 1 / span 2; */
+.modal-content {
+  /* ... your existing modal image styles ... */
 }
-
-.gallery__item--3 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 6;
-
-    /** Alternative Syntax **/
-    /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
-}
-
-.gallery__item--4 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 6;
-
-    /** Alternative Syntax **/
-    /* grid-column: 1 / span 4;  */
-    /* grid-row: 3 / span 3; */
-}
-
-.gallery__item--5 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 9;
-
-    /** Alternative Syntax **/
-    /* grid-column: 1 / span 4; */
-    /* grid-row: 6 / span 3; */
-}
-
-.gallery__item--6 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 6;
-    grid-row-end: 9;
-
-    /** Alternative Syntax **/
-    /* grid-column: 5 / span 4; */
-    /* grid-row: 6 / span 3; */
-}
-
 .gallery__img {
     cursor: pointer;
 }
