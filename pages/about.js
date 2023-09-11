@@ -1,5 +1,5 @@
-import Aboutme from '../components/Aboutme'
-import Navbar from '../components/Navbar'
+import Aboutme from '../Components/Aboutme'
+import Navbar from '../Components/Navbar'
 export default function About () {
     return (
         <div>

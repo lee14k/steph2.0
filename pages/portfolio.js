@@ -1,5 +1,5 @@
-import Pgrid from '../components/Pgrid'
-import Navbar from '../components/Navbar'
+import Pgrid from '../Components/Pgrid'
+import Navbar from '../Components/Navbar'
 export default function Portfolio() {
     return (
         <div>
