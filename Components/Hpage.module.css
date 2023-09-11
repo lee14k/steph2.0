@@ -1,0 +1,23 @@
+.dot {
+    height: 800px;
+    width: 800px;
+    background-color: #ffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:20px;
+  }
+
+  .home {
+    display:flex;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+.hhead {
+    margin-top:350px;
+}
