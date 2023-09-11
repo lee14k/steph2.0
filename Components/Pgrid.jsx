@@ -19,14 +19,14 @@ function Imagegallery() {
     "/sheiseport1.png",
     "/sheiseport3.png",
     "/sheiseport4.png",
-    "/sheiseport5.png",
-    "/sheiseport6.png",
     "/sheiseport8.jpg",
     "/shieseport10.jpg",
     "/shieseport7.jpg",
     "/sheise11.jpg",
     "/sheise12.jpg",
     "/sheise13.jpg",
+    "/sheiseport5.png",
+    "/sheiseport6.png",
   ];
 
   return (
