@@ -25,8 +25,8 @@ function Imagegallery() {
     "/sheise11.jpg",
     "/sheise12.jpg",
     "/sheise13.jpg",
-    "/sheiseport5.png",
-    "/sheiseport6.png",
+    "/sheise5.png",
+    "/sheise6.png",
   ];
 
   return (
