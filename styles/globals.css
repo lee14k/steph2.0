@@ -152,7 +152,7 @@ ul {
 
   .home {
     display:flex;
-
+flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -172,4 +172,7 @@ nav {
     -webkit-backdrop-filter: blur( 8px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index:10;
+    width:100%;
 }
+
